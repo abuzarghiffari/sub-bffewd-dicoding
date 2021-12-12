@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'San Francisco Regular';
+    src: url('SFProText-Regular.ttf') format('truetype'); }
+
+@font-face {
+    font-family: 'San Francisco Bold';
+    src: url('SFProText-Bold.ttf') format('truetype'); }
+
+@font-face {
+    font-family: 'San Francisco Semibold';
+    src: url('SFProText-Semibold.ttf') format('truetype'); }
