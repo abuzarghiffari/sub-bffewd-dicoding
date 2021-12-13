@@ -1,7 +1,7 @@
 class FoodTer extends HTMLElement {
   connectedCallback() {
-    this.render();
-    document.getElementById('year').innerHTML = (new Date()).getFullYear();
+    this.render()
+    document.getElementById('year').innerHTML = new Date().getFullYear()
   }
 
   render() {
@@ -10,8 +10,8 @@ class FoodTer extends HTMLElement {
         Copyright &copy; <span id="year"></span> Abuzar Ghiffari <br>
         Belajar Fundamental Front-End Web Development
       </h5>
-    `;
+    `
   }
 }
 
-customElements.define('food-ter', FoodTer);
+customElements.define('food-ter', FoodTer)

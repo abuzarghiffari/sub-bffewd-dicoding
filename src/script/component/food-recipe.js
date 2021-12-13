@@ -2,22 +2,24 @@
 /* eslint-disable no-shadow */
 class FoodRecipe extends HTMLElement {
   set food(food) {
-    this._food = food;
+    this._food = food
     this.createIngredientListElement = function (food) {
-      let result = '';
+      let result = ''
       for (let i = 1; i < 21; i++) {
-        const measure = food[`strMeasure${i}`];
-        const ingredients = food[`strIngredient${i}`];
-        result = `${result}<li>${measure} ${ingredients}</li>`;
+        const measure = food[`strMeasure${i}`]
+        const ingredients = food[`strIngredient${i}`]
+        result = `${result}<li>${measure} ${ingredients}</li>`
       }
-      return result;
-    };
-    this.render();
+      return result
+    }
+    this.render()
   }
 
   render() {
     this.innerHTML = `
-      <div class="modal fade" id="detailRecipe${this._food.idMeal}" tabindex="-1" role="dialog" aria-labelledby="detailRecipe" aria-hidden="true">
+      <div class="modal fade" id="detailRecipe${
+        this._food.idMeal
+      }" tabindex="-1" role="dialog" aria-labelledby="detailRecipe" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-area">
@@ -39,8 +41,8 @@ class FoodRecipe extends HTMLElement {
           </div>
         </div>
       </div>
-    `;
+    `
   }
 }
 
-customElements.define('food-recipe', FoodRecipe);
+customElements.define('food-recipe', FoodRecipe)

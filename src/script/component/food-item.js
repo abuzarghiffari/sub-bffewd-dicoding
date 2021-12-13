@@ -1,11 +1,11 @@
-import 'jquery/dist/jquery.min';
-import 'bootstrap/dist/js/bootstrap.min';
-import './food-recipe';
+import 'jquery/dist/jquery.min'
+import 'bootstrap/dist/js/bootstrap.min'
+import './food-recipe'
 
 class FoodItem extends HTMLElement {
   set food(food) {
-    this._food = food;
-    this.render();
+    this._food = food
+    this.render()
   }
 
   render() {
@@ -19,14 +19,14 @@ class FoodItem extends HTMLElement {
             <small>${this._food.strCategory}</small>
           </div>
           <div class="foodton">
-            <button type="button" data-toggle="modal" data-target="#/detail/${this._food.idMeal}">
+            <button type="button" data-toggle="modal" data-target="#detailRecipe${this._food.idMeal}">
               Recipe
             </button>
           </div>
         </div>
       </div>
-    `;
+    `
   }
 }
 
-customElements.define('food-item', FoodItem);
+customElements.define('food-item', FoodItem)

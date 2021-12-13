@@ -1,116 +1,145 @@
-@import "../fonts/fonts.css";
-@import "./dark.css";
-@import "./food-item.css";
-@import "./food-recipe.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import './dark';
+@import './food-item';
+@import './food-recipe';
 
 :root {
-    --white: #FFFFFF;
-    --grey: #E5E5E5;
-    --black: #202124;
-    --blue: #0A84FF;  }
+  --white: #ffffff;
+  --grey: #e5e5e5;
+  --black: #202124;
+  --blue: #0a84ff;
+}
 * {
-    margin: 0;
-    padding: 0;
-    color: var(--black);
-    box-sizing: border-box;
-    letter-spacing: -0.078px; }
-input, button, h5 {
-    font-size: 16px; }
+  margin: 0;
+  padding: 0;
+  color: var(--black);
+  box-sizing: border-box;
+  letter-spacing: -0.078px;
+  font-family: 'Inter', sans-serif;
+}
+input,
+button,
+h5 {
+  font-size: 16px;
+}
 body {
-    position: relative;
-    min-height: 100vh;
-    background-color: #d4d4d4;
-    font-family: 'San Francisco Regular'; }
+  position: relative;
+  min-height: 100vh;
+  background-color: #d4d4d4;
+}
 main {
-    padding: 16px 16px 100px 16px; }
+  padding: 16px 16px 100px 16px;
+}
 .placeholder {
-    font-size: 20px !important;
-    margin-top: 20px;
-    text-align: center;
-    font-weight: lighter; }
+  font-size: 20px !important;
+  margin-top: 20px;
+  text-align: center;
+  font-weight: lighter;
+}
 
 /* Navbar */
 header {
-    margin-bottom: 10px;
-    background-color: var(--grey); }
+  margin-bottom: 10px;
+  background-color: var(--grey);
+}
 food-bar {
-    margin: auto;
-    display: flex;
-    padding: 10px;
-    max-width: 1270px;
-    align-items: center;  
-    justify-content: space-between; }
+  margin: auto;
+  display: flex;
+  padding: 10px;
+  max-width: 1270px;
+  align-items: center;
+  justify-content: space-between;
+}
 food-bar > h1 {
-    font-size: 20px;
-    margin-bottom: 0;
-    font-family: 'San Francisco Semibold'; }
+  font-size: 20px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
 
 /* Search Bar */
 .search-food {
-    max-width: 768px;
-    margin: 0 auto; }
+  max-width: 768px;
+  margin: 0 auto;
+}
 .tab {
-    display: flex;
-    align-items: center;
-    background-color: var(--grey);
-    border-radius: 20px 20px 0 0; }
+  display: flex;
+  align-items: center;
+  background-color: var(--grey);
+  border-radius: 20px 20px 0 0;
+}
 .tab > img {
-    padding: 15px; }
+  padding: 15px;
+}
 .tab > h5 {
-    margin-bottom: 0;
-    padding: 8px 20px;
-    font-weight: normal;
-    align-self: flex-end;
-    background-color: var(--white);
-    border-radius: 14px 14px 0 0; }
+  margin-bottom: 0;
+  padding: 8px 20px;
+  font-weight: normal;
+  align-self: flex-end;
+  background-color: var(--white);
+  border-radius: 14px 14px 0 0;
+}
 .search_area {
-    display: flex;
-    padding: 16px;
-    margin-bottom: 16px;
-    align-items: center;
-    border-radius: 0 0 20px 20px;
-    background-color: var(--white); }
+  padding: 16px;
+  margin-bottom: 16px;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+  background-color: var(--white);
+}
 .search_area > label {
-    font-family: 'San Francisco Semibold'; }
+  font-weight: 600;
+}
 .search_area > input {
-    flex: 5;
-    width: 100%;
-    padding: 5px;
-    outline: none;
-    margin: 0 8px 0 8px;
-    border-radius: 5px;
-    border: 0.5px solid rgba(60, 60, 67, 0.29); }
-[type="search"]::-webkit-search-cancel-button {
-    appearance: none;
-    -webkit-appearance: none;
-    content: url(./img/light-x.svg); }
+  flex: 5;
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 8px;
+  outline: none;
+  border-radius: 5px;
+  border: 0.5px solid rgba(60, 60, 67, 0.29);
+}
+[type='search']::-webkit-search-cancel-button {
+  appearance: none;
+  -webkit-appearance: none;
+  content: url(./img/light-x.svg);
+}
 .search_area > button {
-    flex: 1;
-    width: 100%;
-    border: none;
-    outline: none;
-    padding: 5px;
-    cursor: pointer;
-    color: var(--white);
-    border-radius: 8px;
-    background-color: var(--blue); }
+  flex: 1;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  cursor: pointer;
+  color: var(--white);
+  border-radius: 8px;
+  background-color: var(--blue);
+}
 .search_area > button:hover {
-    background-color: #007AFF; }
+  background-color: #007aff;
+}
 
 /* Footer */
 food-ter {
-    bottom: 0;
-    width: 100%;
-    padding: 10px;
-    display: block;
-    text-align: center;
-    position: absolute;
-    background-color: var(--grey); }
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  display: block;
+  text-align: center;
+  position: absolute;
+  background-color: var(--grey);
+}
 food-ter > h5 {
-    margin-bottom: 0;
-    font-weight: normal; }
+  margin-bottom: 0;
+  font-weight: normal;
+}
 
 @media (min-width: 992px) {
-    main {
-        padding: 16px 16px 69.5px 16px; }
+  main {
+    padding: 16px 16px 69.5px 16px;
+  }
+  .search_area {
+    display: flex;
+  }
+  .search_area input {
+    margin: 0 8px 0 0;
+  }
 }

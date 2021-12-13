@@ -1,20 +1,25 @@
 .dark-toggle {
-    display: flex; }
+  display: flex;
+}
 .dark-toggle > input {
-    visibility: hidden; }
+  visibility: hidden;
+}
 #toggle {
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    margin-bottom: 0;
-    user-select: none;
-    border-radius: 50px;
-    background-color: var(--black); }
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  margin-bottom: 0;
+  user-select: none;
+  border-radius: 50px;
+  background-color: var(--black);
+}
 
 body.dark {
-    background-color: #2d2e30; }
+  background-color: #2d2e30;
+}
 body.dark #toggle {
-    background-color: var(--white); }
+  background-color: var(--white);
+}
 
 body.dark h1,
 body.dark h2,
@@ -25,25 +30,31 @@ body.dark input,
 body.dark small,
 body.dark li,
 body.dark food-list > .placeholder {
-    color: var(--white); }
+  color: var(--white);
+}
 
 body.dark input {
-    border: 0.5px solid rgba(84, 84, 88, 0.65); }
+  border: 0.5px solid rgba(84, 84, 88, 0.65);
+}
 
 body.dark header,
 body.dark .tab,
 body.dark input,
 body.dark food-ter {
-    background-color: var(--black); }
+  background-color: var(--black);
+}
 
 body.dark .search_area,
 body.dark .tab > h5,
 body.dark food-item,
 body.dark .modal-content {
-    background-color: #38393A; }
+  background-color: #38393a;
+}
 
 body.dark .modal-content > button {
-    background-color: #38393A;
-    border-top: 0.5px solid rgba(252, 252, 252, 0.29); } 
+  background-color: #38393a;
+  border-top: 0.5px solid rgba(252, 252, 252, 0.29);
+}
 body.dark .modal-content > button:hover {
-    background-color: #3e3f3f; }
+  background-color: #3e3f3f;
+}
