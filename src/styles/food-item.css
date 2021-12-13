@@ -1,16 +1,15 @@
 food-list {
-  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-food-item {
+.food-area {
   width: 100%;
   overflow: hidden;
   margin-top: 16px;
   border-radius: 20px;
   background-color: var(--white);
 }
-food-item .food-image {
+.food-area > .food-image {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -55,8 +54,17 @@ food-item .food-image {
 }
 
 @media (min-width: 650px) {
-  food-item {
-    width: 230px;
+  food-list {
+    display: flex;
+  }
+  .food-area {
+    width: 195px;
     margin: 0 0 16px 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .food-area {
+    width: 230px;
   }
 }

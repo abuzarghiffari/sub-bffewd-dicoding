@@ -1,6 +1,6 @@
 /* eslint-disable no-use-before-define */
-import '../component/food-list'
-import '../component/search-bar'
+import '../components/food-list'
+import '../components/search-bar'
 import { FoodSource, Main } from '../data/food-source'
 
 const search = () => {

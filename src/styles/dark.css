@@ -46,7 +46,7 @@ body.dark food-ter {
 
 body.dark .search_area,
 body.dark .tab > h5,
-body.dark food-item,
+body.dark .food-area,
 body.dark .modal-content {
   background-color: #38393a;
 }
